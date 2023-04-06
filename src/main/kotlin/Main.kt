@@ -1,10 +1,16 @@
-fun main(){
-    numbers()
-    println()
+fun main() {
+    ages(14)
+    ages(45)
+    ages(79)
 }
-//Write a program in Kotlin that prints the numbers from 1 to 10 using a for loop.
-fun numbers(){
-    for (i in 1..10){
-        println(i)
+fun ages(age:Int){
+    if (age in 1..17){
+        println("You are not old enough to vote")
+    }
+    else if (age in 18..65){
+        println("You are eligible to vote")
+    }
+    else{
+        println("You are a senior citizen")
     }
 }
